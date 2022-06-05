@@ -1,4 +1,4 @@
-import numpy as np
+iimport numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
 
@@ -39,8 +39,9 @@ def predict():
 
     
 
-    return render_template('index.html', prediction_text='Iris Flower species predicted is   $ {}'.format(round(prediction[0])))
+    return render_template('index.html', prediction_text='Iris Flower species predicted is   :- {}'.format(prediction[0]))
 
 
 if __name__ == "__main__":
+    app.run(debug=True)
     app.run(debug=True)
